@@ -545,14 +545,13 @@ class SynthwaveEngine {
             for (let i = 0; i < bufferLength; i++) {
                 const barHeight = (dataArray[i] / 255) * height;
 
-                // Gradient from cyan to pink
-                const hue = 180 + (i / bufferLength) * 60;
-                ctx.fillStyle = `hsl(${hue}, 100%, 50%)`;
+                // Crustpunk colors - rust, bile green, dried blood
+                const colors = ['#8b4513', '#6b8e23', '#722f37', '#556b2f', '#9a8b4f'];
+                ctx.fillStyle = colors[i % colors.length];
                 ctx.fillRect(x, height - barHeight, barWidth, barHeight);
 
-                // Glow effect
-                ctx.shadowColor = `hsl(${hue}, 100%, 50%)`;
-                ctx.shadowBlur = 10;
+                // No glow - gritty aesthetic
+                ctx.shadowBlur = 0;
 
                 x += barWidth + 1;
             }
@@ -565,14 +564,14 @@ class SynthwaveEngine {
 
     getTrackName() {
         const names = [
-            'NEURAL STATIC',
-            'CHROME DREAMS',
-            'NEON WASTELAND',
-            'GHOST PROTOCOL',
-            'MEAT MACHINE',
-            'SYNTHETIC BLOOD',
-            'DEAD CHANNELS',
-            'WIRE MOTHER'
+            'RUST AND RUIN',
+            'MEAT COLLAPSE',
+            'GUTTER HYMN',
+            'DEAD STATIC',
+            'BURNT CHROME',
+            'PLAGUE CARRIER',
+            'NO FUTURE',
+            'DECAY SIGNAL'
         ];
         return names[this.currentTrack % names.length];
     }
