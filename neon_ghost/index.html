@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEON GHOST // Cyberpunk Life Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="boot-sequence" class="fullscreen">
+        <div class="boot-text">
+            <div class="boot-line" data-delay="0">ZETATECH NEURAL INTERFACE v7.2.1</div>
+            <div class="boot-line" data-delay="200">INITIALIZING CORTICAL STACK...</div>
+            <div class="boot-line" data-delay="400">LOADING PERSONALITY CONSTRUCT...</div>
+            <div class="boot-line" data-delay="600">CALIBRATING OPTIC NERVE SHUNT...</div>
+            <div class="boot-line" data-delay="800">SYNCING BIOSENSORS...</div>
+            <div class="boot-line" data-delay="1000">ESTABLISHING MESH NETWORK CONNECTION...</div>
+            <div class="boot-line" data-delay="1200">> IDENTITY VERIFIED: <span class="highlight">GHOST_NULL</span></div>
+            <div class="boot-line" data-delay="1400">> NEURAL LINK: <span class="status-good">STABLE</span></div>
+            <div class="boot-line" data-delay="1600">> MEMORY INTEGRITY: <span class="status-warn">87.3%</span></div>
+            <div class="boot-line" data-delay="1800">WELCOME BACK, OPERATOR.</div>
+            <div class="boot-line" data-delay="2200">
+                <button id="start-btn" class="diegetic-btn">[ JACK IN ]</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="game-container" class="hidden">
+        <!-- Diegetic HUD - Neural Implant Overlay -->
+        <div id="neural-hud">
+            <!-- Top bar - time and location -->
+            <div id="hud-top">
+                <div class="hud-segment left">
+                    <span class="label">SECTOR</span>
+                    <span id="location-display" class="value">DOWNTOWN // NEON DISTRICT</span>
+                </div>
+                <div class="hud-segment center">
+                    <span id="time-display" class="time-value">22:47</span>
+                    <span id="date-display" class="date-value">2087.03.15</span>
+                </div>
+                <div class="hud-segment right">
+                    <span class="label">MESH</span>
+                    <span id="mesh-status" class="value status-good">CONNECTED</span>
+                </div>
+            </div>
+
+            <!-- Left sidebar - biometrics -->
+            <div id="hud-left">
+                <div class="bio-panel">
+                    <div class="panel-header">BIOMETRICS</div>
+                    <div class="bio-stat">
+                        <span class="stat-label">HEALTH</span>
+                        <div class="stat-bar">
+                            <div id="health-bar" class="bar-fill health"></div>
+                        </div>
+                        <span id="health-value" class="stat-value">100</span>
+                    </div>
+                    <div class="bio-stat">
+                        <span class="stat-label">ENERGY</span>
+                        <div class="stat-bar">
+                            <div id="energy-bar" class="bar-fill energy"></div>
+                        </div>
+                        <span id="energy-value" class="stat-value">100</span>
+                    </div>
+                    <div class="bio-stat">
+                        <span class="stat-label">STRESS</span>
+                        <div class="stat-bar">
+                            <div id="stress-bar" class="bar-fill stress"></div>
+                        </div>
+                        <span id="stress-value" class="stat-value">15</span>
+                    </div>
+                    <div class="bio-stat">
+                        <span class="stat-label">CHROME</span>
+                        <div class="stat-bar">
+                            <div id="chrome-bar" class="bar-fill chrome"></div>
+                        </div>
+                        <span id="chrome-value" class="stat-value">23</span>
+                    </div>
+                </div>
+
+                <div class="cred-panel">
+                    <div class="panel-header">STREET CRED</div>
+                    <div id="cred-display" class="cred-value">
+                        <span class="cred-icon">◆</span>
+                        <span id="cred-number">127</span>
+                    </div>
+                    <div id="cred-rank" class="cred-rank">NOBODY</div>
+                </div>
+
+                <div class="currency-panel">
+                    <div class="panel-header">EURODOLLARS</div>
+                    <div id="money-display" class="money-value">
+                        <span class="currency-symbol">€$</span>
+                        <span id="money-number">2,450</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right sidebar - quick access -->
+            <div id="hud-right">
+                <div class="quick-panel">
+                    <div class="panel-header">NEURAL APPS</div>
+                    <button class="neural-btn" data-panel="inventory">
+                        <span class="btn-icon">◈</span>
+                        <span class="btn-label">INVENTORY</span>
+                    </button>
+                    <button class="neural-btn" data-panel="augments">
+                        <span class="btn-icon">⬡</span>
+                        <span class="btn-label">CHROME</span>
+                    </button>
+                    <button class="neural-btn" data-panel="contacts">
+                        <span class="btn-icon">◉</span>
+                        <span class="btn-label">CONTACTS</span>
+                    </button>
+                    <button class="neural-btn" data-panel="jobs">
+                        <span class="btn-icon">◐</span>
+                        <span class="btn-label">FIXERS</span>
+                    </button>
+                    <button class="neural-btn" data-panel="map">
+                        <span class="btn-icon">◧</span>
+                        <span class="btn-label">MAP</span>
+                    </button>
+                </div>
+
+                <div class="audio-panel">
+                    <div class="panel-header">AUDIO FEED</div>
+                    <div id="audio-visualizer">
+                        <canvas id="visualizer-canvas"></canvas>
+                    </div>
+                    <div class="audio-controls">
+                        <button id="music-toggle" class="audio-btn">▶</button>
+                        <input type="range" id="volume-slider" min="0" max="100" value="70">
+                    </div>
+                    <div id="track-info">
+                        <span class="track-name">NEURAL STATIC</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom - action bar -->
+            <div id="hud-bottom">
+                <div class="action-bar">
+                    <button class="action-btn" data-action="sleep">REST</button>
+                    <button class="action-btn" data-action="work">WORK</button>
+                    <button class="action-btn" data-action="explore">EXPLORE</button>
+                    <button class="action-btn" data-action="netrun">NETRUN</button>
+                    <button class="action-btn" data-action="socialize">SOCIALIZE</button>
+                </div>
+            </div>
+
+            <!-- Scan lines overlay -->
+            <div class="scanlines"></div>
+            <div class="noise"></div>
+            <div class="vignette"></div>
+        </div>
+
+        <!-- Main content area -->
+        <div id="main-content">
+            <div id="scene-display">
+                <div id="scene-image"></div>
+                <div id="scene-text">
+                    <div id="narrative-box">
+                        <p id="narrative-text"></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Choice panel (diegetic - appears as holographic menu) -->
+            <div id="choice-panel" class="hidden">
+                <div class="holo-frame">
+                    <div class="holo-header">SELECT OPTION</div>
+                    <div id="choices-container"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal panels (diegetic interfaces) -->
+        <div id="modal-overlay" class="hidden">
+            <div id="modal-panel" class="diegetic-panel">
+                <div class="panel-frame">
+                    <div id="modal-header" class="modal-header">
+                        <span id="modal-title">SYSTEM</span>
+                        <button class="close-btn">×</button>
+                    </div>
+                    <div id="modal-content"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Event notification -->
+        <div id="event-notification" class="hidden">
+            <div class="notif-icon">!</div>
+            <div class="notif-text"></div>
+        </div>
+    </div>
+
+    <!-- Audio context initialized by user interaction -->
+    <script src="audio.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
