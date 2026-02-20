@@ -2,7 +2,7 @@
 
 ## Game title and version
 define config.name = _("Vessel")
-define config.version = "0.1 - Cycle One"
+define config.version = "0.2 - Cycles One & Two"
 
 ## Window title
 define config.window_title = _("Vessel - A Psychological Horror Simulator")

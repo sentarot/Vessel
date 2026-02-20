@@ -8,6 +8,8 @@ define sophie = Character("Sophie", color="#ffd4b8")
 define marcus = Character("Dr. Marcus", color="#b8e6ff")
 define vivian = Character("Vivian", color="#f0e68c")
 define narrator = Character(None, kind=nvl)
+define luna = Character("Luna", color="#d4a6e8")
+define unknown = Character("???", color="#999999")
 
 ## Game Variables
 default day = 1
@@ -633,9 +635,8 @@ label birth_sequence:
     centered "WELCOME TO CYCLE TWO"
     
     menu:
-        "Begin Cycle Two (Coming Soon)":
-            "Cycle Two is not yet implemented. Thank you for playing Cycle One."
-            return
-            
+        "Begin Cycle Two":
+            jump cycle_two_start
+
         "Return to Start":
             jump start

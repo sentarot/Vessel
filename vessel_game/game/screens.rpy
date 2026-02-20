@@ -275,3 +275,60 @@ style say_dialogue:
     xsize gui.dialogue_width
     ypos gui.dialogue_ypos
     adjust_spacing False
+
+
+## Confirm screen - fixes yesno_prompt AttributeError
+screen confirm(message, yes_action, no_action):
+
+    modal True
+
+    zorder 200
+
+    style_prefix "confirm"
+
+    add "gui/game_menu.png"
+
+    frame:
+        xalign 0.5
+        yalign 0.5
+        xsize 600
+        ysize 300
+        background "#1c1e26"
+        padding (40, 40)
+
+        vbox:
+            xalign 0.5
+            yalign 0.5
+            spacing 30
+
+            label _(message):
+                style "confirm_prompt"
+                xalign 0.5
+                text_color "#ffebb4"
+                text_size 24
+
+            hbox:
+                xalign 0.5
+                spacing 100
+
+                textbutton _("Yes") action yes_action:
+                    xsize 140
+                    ysize 50
+                    background Frame("gui/button/choice_idle_background.png", 10, 10)
+                    hover_background Frame("gui/button/choice_hover_background.png", 10, 10)
+                    text_size 22
+                    text_color "#b4b4c8"
+                    text_hover_color "#ffebb4"
+
+                textbutton _("No") action no_action:
+                    xsize 140
+                    ysize 50
+                    background Frame("gui/button/choice_idle_background.png", 10, 10)
+                    hover_background Frame("gui/button/choice_hover_background.png", 10, 10)
+                    text_size 22
+                    text_color "#b4b4c8"
+                    text_hover_color "#ffebb4"
+
+style confirm_prompt is gui_prompt:
+    xalign 0.5
+    text_align 0.5
