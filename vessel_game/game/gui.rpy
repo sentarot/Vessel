@@ -40,7 +40,7 @@ define gui.game_menu_background = "gui/game_menu.png"
 define gui.textbox_height = 240
 define gui.textbox_yalign = 1.0
 
-define gui.name_xpos = 300
+define gui.name_xpos = 240
 define gui.name_ypos = 0
 define gui.name_xalign = 0.0
 
@@ -49,9 +49,9 @@ define gui.namebox_height = None
 define gui.namebox_borders = Borders(5, 5, 5, 5)
 define gui.namebox_tile = False
 
-define gui.dialogue_xpos = 320
+define gui.dialogue_xpos = 268
 define gui.dialogue_ypos = 62
-define gui.dialogue_width = 900
+define gui.dialogue_width = 960
 define gui.dialogue_text_xalign = 0.0
 
 ## Buttons

@@ -276,6 +276,23 @@ style say_dialogue:
     ypos gui.dialogue_ypos
     adjust_spacing False
 
+## Centered text styles (for interstitial title cards)
+style centered_window is default:
+    xalign 0.5
+    xfill True
+    yalign 0.5
+    ysize gui.textbox_height
+    background None
+
+style centered_text is default:
+    xalign 0.5
+    text_align 0.5
+    xsize 1100
+    yalign 0.5
+    color "#ffffff"
+    size gui.text_size
+    layout "subtitle"
+
 
 ## Confirm screen - fixes yesno_prompt AttributeError
 screen confirm(message, yes_action, no_action):
