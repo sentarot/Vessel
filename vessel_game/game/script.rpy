@@ -7,7 +7,7 @@ define aria = Character("Aria", color="#ffb6c1")
 define sophie = Character("Sophie", color="#ffd4b8")
 define marcus = Character("Dr. Marcus", color="#b8e6ff")
 define vivian = Character("Vivian", color="#f0e68c")
-define narrator = Character(None, kind=nvl)
+define narrator = Character(None)
 define luna = Character("Luna", color="#d4a6e8")
 define unknown = Character("???", color="#999999")
 
