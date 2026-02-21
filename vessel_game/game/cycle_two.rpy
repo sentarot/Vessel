@@ -93,7 +93,9 @@ label cycle_two_start:
 
     "I look like a doll that someone's been squeezing."
 
-    "Dark circles under my eyes. Wrists I can close my own fingers around. My face still pretty - annoyingly, persistently pretty - with its big eyes and soft mouth. The kind of face people call 'sweet.' The kind of face no one takes seriously."
+    "Dark circles under my eyes. Wrists I can close my own fingers around. My face still pretty - annoyingly, persistently pretty - with its big eyes and soft mouth and dusting of freckles. I look younger now than I did before. The weight loss has stripped away whatever maturity my face ever had. Without makeup, hair unbrushed, in this bathroom light, I could pass for thirteen."
+
+    "That's why they can do this. That's part of why it works. When you look like a child, everyone is already prepared to make decisions for you."
 
     "But my eyes. My eyes are clear for the first time in months."
 
@@ -121,7 +123,9 @@ label cycle_two_start:
 
     "Breakfast. But this time I'm wheeled past other residents and I actually look at them."
 
-    "There's a woman I haven't seen before. She's tiny - maybe five feet, maybe less - with a thirty-week belly that looks grotesquely large on her small frame. Her neck is thin as a stem. Her caretaker, a towering blonde with a swimsuit model's body, holds a fork to the woman's lips."
+    "There's a woman I haven't seen before. She's tiny - maybe five feet, maybe less - with a thirty-week belly that looks grotesquely large on her small frame. Her neck is thin as a stem. She looks young too. Maybe even younger than me. Or maybe she's forty and just looks sixteen - like me, cursed with a face that makes people assume she can't possibly know what's good for her."
+
+    "Her caretaker, a towering blonde with a swimsuit model's body, holds a fork to the woman's lips. The blonde coos at her like she's feeding an infant."
 
     "The woman's eyes are glassy. Vacant. She chews when the fork enters. Swallows when a hand strokes her throat."
 
@@ -145,8 +149,8 @@ label cycle_two_start:
             $ dignity += 10
             protag "I can do it."
             "I take the fork. My hand shakes slightly, but I bring the eggs to my mouth on my own."
-            aria "Look at you! So independent today."
-            "She says it like I'm a toddler who just used a spoon."
+            aria "Look at you! So independent today. My big girl."
+            "My big girl. I'm twenty-three years old. I have a degree. But I look sixteen and I'm pregnant with triplets, so I'm her 'big girl.'"
             "But I did it. I fed myself."
 
         "Let her feed me (conserve energy)":
@@ -305,6 +309,9 @@ label c2_crafting:
             elena "Your eyes. They did the thing mine did, three cycles ago. Like someone turned the lights on."
             "She holds up her knitting, examining it casually."
             elena "Keep your voice down. Always keep your voice down."
+            elena "How old are you, anyway? You look about fifteen."
+            protag "Twenty-three."
+            elena "Jesus. They love that, you know. The young-looking ones. Easier to control when everyone already thinks you're a child."
 
     elena "They'll notice eventually. They always do. And then they increase the medication."
 
@@ -351,9 +358,9 @@ label c2_crafting:
 
     aria "Oh how sweet! You two are getting along!"
 
-    elena "She reminds me of my daughter."
+    elena "She reminds me of my daughter. She's about the same age, right? Sixteen, seventeen?"
 
-    "Elena says it smoothly, warmly. Perfect performance."
+    "I'm twenty-three. But Elena sells the lie perfectly, and Aria doesn't even blink."
 
     aria "That's so nice. Lily could use a friend."
 
@@ -372,7 +379,9 @@ label c2_doctor:
 
     marcus "Lily! How are we adjusting to the new pregnancy?"
 
-    "He says it so casually. Like asking about the weather."
+    "He says it so casually. Like asking about the weather. His eyes flick over me the way adults look at children in a doctor's office - with a benign authority that assumes incomprehension."
+
+    "I've heard him on the phone with buyers. He describes me as 'early twenties but presents much younger.' Like it's a selling point. Like my face is part of the product."
 
     menu:
         "How do I play this?"
@@ -389,6 +398,8 @@ label c2_doctor:
             protag "You impregnated me without my consent while I was sedated."
             marcus "Lily, we've discussed this. You signed the forms."
             protag "Under duress. While drugged."
+            "He looks at me over his glasses with the particular patience adults reserve for children having tantrums. The look that says: you'll understand when you're older."
+            "I'm twenty-three. But he'll never see that."
             "He makes a note on his clipboard."
             marcus "I'm going to increase your evening supplement. You seem agitated."
             "Evening supplement. More drugs."
@@ -743,7 +754,7 @@ label c2_hallway:
 
     "Lights snap on across the compound. The garden floods with light."
 
-    "I'm standing in the open - five-foot-two, a hundred and thirty pounds of baby weight on a frame built for ninety-eight, in a white nightgown stretched transparent over my belly. I must look like a ghost."
+    "I'm standing in the open - five-foot-two, a hundred and thirty pounds of baby weight on a frame built for ninety-eight, in a white nightgown stretched transparent over my belly. With my bare feet and baby face and freckles, I must look like a pregnant child. A ghost of a girl."
 
     "Then a hand grabs my arm."
 
@@ -883,13 +894,13 @@ label c2_caught:
 
     "Aria. Sophie. Two security staff I've never seen - both over six feet, thick-armed, with the quiet competence of people trained to handle things that try to escape."
 
-    "I'm five-two in a muddy nightgown. My belly is caked with dirt. I look up at all four of them, and I am so, so small."
+    "I'm five-two in a muddy nightgown. My belly is caked with dirt. I look up at all four of them with my big wet eyes and my baby face and I am so, so small. I look like someone's pregnant kid. I can see it in the security guard's expression - a flicker of confusion, of something almost like concern, before professionalism locks it down."
 
     "Aria's face is not warm anymore. Not honey-sweet."
 
     aria "Oh, Lily."
 
-    "Disappointment. Like I'm a child who broke a vase."
+    "Disappointment. But not the kind you show an equal. The kind you show a child who broke a vase. Because that's all I'll ever be to her - a wayward girl who doesn't know what's good for her."
 
     "They bring a wheelchair. Strap me in."
 
@@ -921,7 +932,9 @@ label c2_caught:
 
     "The last thing I hear is Aria's voice."
 
-    aria "We'll take such good care of you, sweet girl. You don't need to worry about anything ever again."
+    aria "We'll take such good care of you, sweet girl. You're too young to worry about anything. Let us handle everything."
+
+    "I'm twenty-three. But I'll never be old enough for them."
 
     "And then..."
 
@@ -1035,7 +1048,11 @@ label c2_ending_free:
 
     "My feet are bleeding. My nightgown is torn, barely covering my body - thin limbs, sharp bones, and this impossible belly leading the way. I'm covered in mud."
 
-    "I'm five-foot-two. I weigh a hundred and thirty pounds, most of it babies. My legs are scratched and trembling. My arms are streaked with dirt."
+    "I'm five-foot-two. I weigh a hundred and thirty pounds, most of it babies. My legs are scratched and trembling. My arms are streaked with dirt. My face looks fifteen years old."
+
+    "When I reach the village, they will look at me and see a pregnant child. They will call the police not because I ask them to, but because I look too young to be in this condition."
+
+    "For once, that face might save me."
 
     "I'm twenty weeks pregnant with triplets I didn't consent to carry."
 

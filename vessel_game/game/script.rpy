@@ -51,7 +51,7 @@ label start:
 
     "She's sitting on the edge of my bed, and even seated she seems to tower over me. Aria is nearly six feet tall, with the kind of body that makes maternity dresses look like evening gowns on everyone else. Full hips, a narrow waist, broad shoulders. Her auburn hair falls in glossy waves past her collarbone. She smells like jasmine and something expensive."
 
-    "I'm five-foot-two. I weigh ninety-eight pounds when I'm not... like this. My wrists are the size of her thumbs."
+    "I'm five-foot-two. I weigh ninety-eight pounds when I'm not... like this. My wrists are the size of her thumbs. People have been carding me since I was twelve - not because I look older, but because they can't believe I'm as old as I am. At twenty-three, I still get asked if I need a parent's signature."
 
     "Or trying to toss. At this size, 'tossing' means rocking slightly and hoping."
     
@@ -91,6 +91,14 @@ label start:
     sophie "Perfect timing! The water's just right."
 
     "Between the two of them, they help me out of my nightgown. Two gorgeous Amazons undressing a pregnant pixie. I come up to their chests. My bare belly juts out almost comically between their long, capable bodies."
+
+    sophie "She's so tiny. Every time I see her without the gown I forget how little she is."
+
+    "Sophie says it to Aria like I'm not here. Or like I can't understand."
+
+    aria "I know. She looks about fifteen, doesn't she? My niece is bigger than her."
+
+    "I'm twenty-three. I have a degree. But naked and pregnant between these two women, I look like their underage charge."
 
     "I'm naked in front of them multiple times a day. You'd think I'd be used to it."
 
@@ -147,13 +155,15 @@ label start:
 
     aria "There. You look lovely."
 
-    "I catch my reflection in the mirror. Between them, in the glass, I look like their daughter. Or their doll."
+    "I catch my reflection in the mirror. Between them, in the glass, I look like their daughter. Their teenage daughter who got in trouble."
 
-    "My face is still pretty - heart-shaped, with big dark eyes and a small, upturned nose. I look young. I've always looked young. But now the baby face works against me. Framed by my thin neck and narrow shoulders, above this enormous pregnant belly, I look like a child who swallowed a beach ball."
+    "My face is the problem. Heart-shaped, with big dark eyes, long lashes, a small upturned nose, a dusting of freckles across the bridge. Rosebud mouth. I look fourteen. I've always looked absurdly young - got pulled aside at my own college graduation because security thought a high schooler had wandered in."
 
-    "Aria and Sophie flank me like a matching set of runway models in pastel medical scrubs. They glow. They radiate health and beauty and competence. Next to them, I am small and round and helpless."
+    "Now the baby face isn't just embarrassing. It's a weapon they use against me. Framed by my thin neck and narrow shoulders, above this enormous pregnant belly, I look like a child carrying a child. The kind of face you pity, not respect. The kind of face that makes people say 'oh, honey' before you've opened your mouth."
 
-    "I'm twenty-three. I was valedictorian. I ran track. I had a full scholarship. I was a hundred and two pounds of fast-twitch muscle."
+    "Aria and Sophie flank me like a matching set of runway models in pastel medical scrubs. They glow. They radiate health and beauty and competence. Next to them, I am small and round and helpless. Their bodies say 'adult.' Mine says 'please take care of me.'"
+
+    "I'm twenty-three. I was valedictorian. I ran track. I had a full scholarship. I was a hundred and two pounds of fast-twitch muscle. I could have done anything."
 
     "Now I can't even put on my own socks."
     
@@ -187,9 +197,11 @@ label start:
     
     protag "Morning."
     
-    vivian "You look adorable today. That color is perfect on you."
-    
-    "Adorable. Not beautiful. Not elegant. Adorable."
+    vivian "You look adorable today. That color is perfect on you. Honestly, you look about sixteen in that dress."
+
+    "She laughs like it's a compliment."
+
+    "Adorable. Sixteen. Not beautiful. Not elegant. Not an adult woman with a master's-level education."
     
     "Aria settles me at a table and immediately begins preparing my plate from the breakfast buffet. I didn't get to choose."
     
@@ -228,8 +240,14 @@ label start:
     
     protag "Four."
     
-    vivian "Four! My god. And here I am complaining about one. You poor thing."
-    
+    vivian "Four! My god. And here I am complaining about one. You poor thing. How old are you, anyway?"
+
+    protag "Twenty-three."
+
+    vivian "No! Truly? I would have guessed... well. You wear it well."
+
+    "She would have guessed seventeen. Maybe younger. Everyone does."
+
     "Poor thing."
     
     "The meal continues. Aria feeds me every bite, wipes my mouth with a napkin, gives me water through a straw."
@@ -284,7 +302,13 @@ label prenatal_yoga:
     "I can't get on my hands and knees. My belly hangs to the floor when I try. My stick-thin arms tremble under the redistributed weight. It's impossible."
     
     luna "Lily, honey, just keep breathing. You're doing exactly what your body needs."
-    
+
+    "She kneels beside me and pushes a strand of hair from my face. The gesture is tender and automatic - the way you'd comfort a child."
+
+    luna "You're so brave, little one."
+
+    "Little one. I'm two years older than her."
+
     "Which is... lying here. Watching everyone else do yoga while I breathe."
     
     $ dignity -= 15
@@ -404,7 +428,9 @@ label doctor_appointment:
 
     "Of course, I'm not in a chair. I'm on an examination table, already in a paper gown that barely closes around my belly, my skinny legs dangling off the edge like a child's. Aria and Sophie stand flanking me - tall, gorgeous sentinels in their matching scrubs."
 
-    "Dr. Marcus is a big man. Broad, silver-haired, with thick hands that look like they could palm my entire belly. His smile is practiced and warm."
+    "Dr. Marcus is a big man. Broad, silver-haired, with thick hands that look like they could palm my entire belly. His smile is practiced and warm. He looks at me the way pediatricians look at their patients - gentle, faintly amused, certain that he knows better."
+
+    "The first time we met, he asked Aria where the patient's mother was. He was looking right at me."
 
     marcus "How are we feeling today, Lily?"
     
@@ -441,6 +467,7 @@ label doctor_appointment:
             $ resistance += 10
             protag "Bedrest? I can barely move as it is. Won't that make me weaker?"
             marcus "Your job right now is to grow healthy babies, Lily. Movement can wait."
+            "He pats my knee. The way you'd pat a kid who asked a silly question."
             aria "We'll take such good care of you, sweetie. You won't have to worry about anything."
             
         "Accept it":
@@ -622,7 +649,7 @@ label birth_sequence:
     
     "She strokes my hair as I start to cry."
     
-    aria "You're special, Lily. So perfect for this. Your body makes such healthy babies."
+    aria "You're special, Lily. So perfect for this. That little body of yours makes such healthy babies. And you'll still look twenty when you're forty - won't that be nice?"
     
     protag "You're keeping me pregnant. You're... you're using me..."
     
@@ -636,7 +663,7 @@ label birth_sequence:
     
     "They lift me from the bed. Sophie scoops me up like I weigh nothing - and I almost don't. One arm under my knees, one behind my back. I'm cradled against her chest, my head barely reaching her shoulder, my swelling belly pressed between us."
 
-    "I'm boneless. Helpless. A small, pretty, pregnant doll."
+    "I'm boneless. Helpless. A small, pretty, pregnant doll that everyone mistakes for a child."
 
     "For the second time of five."
 
