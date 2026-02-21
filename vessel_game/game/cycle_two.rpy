@@ -40,6 +40,10 @@ label cycle_two_start:
 
     "But this time is different. This time I'm awake."
 
+    "Aria leans over me - all five-eleven of her, auburn waves tumbling forward, that generous, curving body in fresh scrubs that somehow look like designer loungewear. Her perfume settles over me like a net."
+
+    "I'm so small in this bed. Curled on my side, knees drawn up around the new swell of my belly, my shoulder blades sharp enough to cut paper."
+
     aria "Good morning, mama! How's our tummy today?"
 
     menu:
@@ -63,9 +67,9 @@ label cycle_two_start:
             aria "I'll let Dr. Marcus know. We may need to adjust her medication."
             "Medication. That's what they call it."
 
-    "Aria helps me to the bathroom. I'm weaker than I should be - the back-to-back pregnancies have hollowed me out."
+    "Aria helps me to the bathroom. Her hand on my lower back covers the entire width of my spine. I'm weaker than I should be - the back-to-back pregnancies have hollowed me out. My hip bones jut above the low curve of my belly. My legs are birdlike."
 
-    "But I can walk. For now, I can walk."
+    "But I can walk. Aria shortens her long stride to match my shuffle, and I can feel her restraining herself from just picking me up."
 
     "That's more than I could do at the end of Cycle One."
 
@@ -83,9 +87,13 @@ label cycle_two_start:
 
     sophie "Arms up, sweetie."
 
-    "She pulls my nightgown over my head. I'm thinner than before, except for the slight curve of my belly."
+    "Sophie lifts my arms like they're made of pipe cleaners. She pulls my nightgown over my head with one fluid motion - her tall, toned body barely shifting with the effort."
 
-    "I catch my reflection. I look... diminished. Dark circles under my eyes. Collarbone jutting."
+    "I catch my reflection in the plastic mirror. Behind Sophie's broad, tan shoulders, I can see myself - all ribs and collarbones and hollow hips, except for the slight curve of my belly where the new pregnancy is just beginning to show. My breasts are still swollen from the last pregnancy, too large for my wasted frame, sitting heavy on my narrow chest."
+
+    "I look like a doll that someone's been squeezing."
+
+    "Dark circles under my eyes. Wrists I can close my own fingers around. My face still pretty - annoyingly, persistently pretty - with its big eyes and soft mouth. The kind of face people call 'sweet.' The kind of face no one takes seriously."
 
     "But my eyes. My eyes are clear for the first time in months."
 
@@ -113,13 +121,13 @@ label cycle_two_start:
 
     "Breakfast. But this time I'm wheeled past other residents and I actually look at them."
 
-    "There's a woman I haven't seen before. Thin, haunted-looking, maybe thirty weeks along."
+    "There's a woman I haven't seen before. She's tiny - maybe five feet, maybe less - with a thirty-week belly that looks grotesquely large on her small frame. Her neck is thin as a stem. Her caretaker, a towering blonde with a swimsuit model's body, holds a fork to the woman's lips."
 
-    "She's staring at her plate while her caretaker feeds her. Her eyes are glassy. Vacant."
+    "The woman's eyes are glassy. Vacant. She chews when the fork enters. Swallows when a hand strokes her throat."
 
     "That was me. That's what I looked like."
 
-    "Another woman - further along, enormous - is chatting brightly with her caretakers, laughing at something they said."
+    "Another woman - further along, enormous - is chatting brightly with her caretakers, laughing at something they said. She's taller than the others, nearly as tall as her staff, and her pregnancy looks almost natural on her long frame."
 
     "She looks happy. Genuinely happy."
 
@@ -158,7 +166,7 @@ label cycle_two_start:
 
     unknown "No. No, I want to go HOME. I want my MOTHER."
 
-    "Two more staff appear. They speak in calm, measured tones. Within moments they're wheeling her away."
+    "Two more staff appear - both tall, both beautiful, one with the broad shoulders of a former athlete, the other willowy with perfect posture. They speak in calm, measured tones, their hands gentle but immovable on the small woman's shoulders. Within moments they're wheeling her away."
 
     "The dining room falls silent."
 
@@ -238,13 +246,13 @@ label c2_morning_activities:
 
     "We pass a bench where a woman is sitting alone. No caretaker in sight."
 
-    "She's maybe forty, with short dark hair and an advanced pregnancy. But something about her is different."
+    "She's maybe forty, with short dark hair and an advanced pregnancy. She's small like me - five-three, maybe five-four - with the same narrow shoulders and delicate build that make pregnancy look like an act of structural engineering. Her belly is massive on her, low and heavy, but she sits upright without support."
 
     "She's reading. An actual book. Not a pregnancy manual."
 
-    "She looks up as we pass and our eyes meet."
+    "She looks up as we pass and our eyes meet. Hers are dark, lined, unclouded."
 
-    "There's something sharp in her gaze. Alert. Knowing."
+    "There's something sharp in her gaze. Alert. Knowing. No gloss, no fog."
 
     $ met_elena = True
 
@@ -512,7 +520,9 @@ label c2_midpoint:
 
     "Week twenty. Halfway through."
 
-    "I'm bigger now. Not as massive as with the quadruplets, but the triplets are making themselves known."
+    "I'm bigger now. Not as massive as with the quadruplets, but the triplets are making themselves known. My belly is round and taut again, pulling my small frame forward. My lower back has started that deep, familiar ache. My breasts are heavy and sore, straining against the soft cotton they dress me in."
+
+    "In the mirror this morning, I looked like a lowercase 'b' - thin everywhere except the one place that matters to them."
 
     "My window of mobility is closing."
 
@@ -532,9 +542,9 @@ label c2_midpoint:
 
     "I find Elena in the gardens during the afternoon free period."
 
-    "She's enormous now. Thirty-six weeks. Due any day."
+    "She's enormous now. Thirty-six weeks on her small frame - her belly is a planet, distorting her entire silhouette, forcing her to sit with her legs spread wide for balance. Her thin arms rest on top of it like they're draped over a boulder. Due any day."
 
-    "We sit on the bench by the koi pond. Her caretaker is fifteen feet away, scrolling on a tablet."
+    "We sit on the bench by the koi pond, two small women with grotesquely large bellies, looking like caricatures of motherhood. Her caretaker - a gorgeous, leggy redhead - is fifteen feet away, scrolling on a tablet."
 
     elena "Tonight."
 
@@ -618,10 +628,10 @@ label c2_the_night:
         "Try to get up":
             $ resistance += 20
             $ fatigue += 25
-            "I swing my legs off the bed. The room tilts."
-            "My belly pulls me forward. I grip the nightstand."
+            "I swing my skinny legs off the bed. The room tilts."
+            "My belly pulls me forward - twenty weeks of triplets on a hundred-pound frame. I grip the nightstand with fingers that can barely close."
             "Stand. You have to stand."
-            "I stand. Barely."
+            "I stand. My knees shake. My belly hangs in front of me, stretching my nightgown taut. Barely."
             "The door. Is it locked?"
             "I try the handle. It turns."
             "They don't lock it on nights they give me the milk. They don't think they need to."
@@ -655,7 +665,7 @@ label c2_hallway:
 
     "The corridor stretches ahead of me, dimly lit and silent."
 
-    "Every step is a negotiation with my body. The triplets shift with each movement."
+    "Every step is a negotiation with my body. My bare feet are cold and swollen on the tile. The triplets shift with each movement, redistributing weight my narrow hips were never built to carry."
 
     "I pass doors. Other residents, sleeping their drugged sleep."
 
@@ -701,7 +711,7 @@ label c2_hallway:
         "React..."
 
         "Hide":
-            "I press myself into a doorway alcove. My belly makes it almost impossible to flatten against the wall."
+            "I press myself into a doorway alcove. My belly juts out obscenely - I can't flatten against the wall, can't suck it in, can't make my body small enough to hide even though the rest of me is barely there."
             "Footsteps approach. Pass. Recede."
             "A night guard. Not looking in my direction."
             "I wait thirty seconds, then keep moving."
@@ -733,15 +743,15 @@ label c2_hallway:
 
     "Lights snap on across the compound. The garden floods with light."
 
-    "I'm standing in the open, twenty weeks pregnant, in a nightgown."
+    "I'm standing in the open - five-foot-two, a hundred and thirty pounds of baby weight on a frame built for ninety-eight, in a white nightgown stretched transparent over my belly. I must look like a ghost."
 
     "Then a hand grabs my arm."
 
     elena "RUN."
 
-    "She's there. Wild-eyed, breathing hard, her massive belly heaving."
+    "She's there. Wild-eyed, breathing hard, her massive belly heaving under her own straining nightgown. Two small women, absurdly pregnant, lit up by floodlights."
 
-    "We don't run. We can't run. Two heavily pregnant women shuffling desperately toward the wall."
+    "We don't run. We can't run. Our legs are too thin, our bellies too heavy. Two vessels shuffling desperately toward the wall."
 
     "Elena leads me to the ivy-covered section. She pulls the vines aside."
 
@@ -763,9 +773,9 @@ label c2_hallway:
         "Go through the gap":
             $ hope += 25
             $ resistance += 20
-            "I get on my hands and knees. The babies shift and press against the ground."
-            "I crawl. Mud and roots and stone scraping my belly."
-            "Halfway through, I get stuck. My belly wedged against stone."
+            "I get on my hands and knees. My belly drops toward the ground, grazing the mud. My thin arms tremble."
+            "I crawl. Mud and roots and stone scraping my taut, stretched skin. My belly drags through the drainage channel."
+            "Halfway through, I get stuck. My belly - the only big part of me - wedged against stone. My shoulders fit. My hips fit. But the babies won't."
             "I can't breathe. I can't move forward or back."
             protag "Elena-"
             elena "Breathe out. Flatten yourself. Push with your legs."
@@ -784,7 +794,7 @@ label c2_hallway:
             elena "I promise."
             "She drops and crawls through the gap with practiced efficiency."
             "And then she's gone."
-            "I stand there in my muddy nightgown, belly hanging, and wait for them to find me."
+            "I stand there in my muddy nightgown, belly hanging low and heavy off my little frame, and wait for them to find me."
             jump c2_caught
 
 
@@ -871,7 +881,9 @@ label c2_caught:
 
     "They find me in under two minutes."
 
-    "Aria. Sophie. Two security staff I've never seen."
+    "Aria. Sophie. Two security staff I've never seen - both over six feet, thick-armed, with the quiet competence of people trained to handle things that try to escape."
+
+    "I'm five-two in a muddy nightgown. My belly is caked with dirt. I look up at all four of them, and I am so, so small."
 
     "Aria's face is not warm anymore. Not honey-sweet."
 
@@ -897,7 +909,7 @@ label c2_caught:
 
     marcus "Elena is none of your concern."
 
-    "He nods to a nurse, who approaches with an IV."
+    "He nods to a nurse - tall, placid-faced, with strong hands and a beauty queen's jawline - who approaches with an IV."
 
     protag "No. No, don't-"
 
@@ -1021,7 +1033,9 @@ label c2_ending_free:
 
     "I start walking toward the village."
 
-    "My feet are bleeding. My nightgown is torn. I'm covered in mud."
+    "My feet are bleeding. My nightgown is torn, barely covering my body - thin limbs, sharp bones, and this impossible belly leading the way. I'm covered in mud."
+
+    "I'm five-foot-two. I weigh a hundred and thirty pounds, most of it babies. My legs are scratched and trembling. My arms are streaked with dirt."
 
     "I'm twenty weeks pregnant with triplets I didn't consent to carry."
 
@@ -1051,9 +1065,9 @@ label c2_ending_caught:
 
     "Weeks later. Months later. You don't know."
 
-    "You're enormous again. The triplets growing on schedule."
+    "You're enormous again. The triplets growing on schedule. Your small body distorted beyond recognition, belly round and hard and massive, your thin arms resting on top of it because there's nowhere else for them to go."
 
-    "Aria brushes your hair. Sophie brings your milk."
+    "Aria brushes your hair - her long, elegant fingers working through the tangles. Sophie brings your milk, bending her tall frame to hold the cup to your lips."
 
     "You drink it."
 
