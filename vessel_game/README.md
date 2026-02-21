@@ -1,7 +1,7 @@
 # VESSEL - A Psychological Horror Simulator
 
 ## About
-Vessel is a Ren'Py visual novel exploring themes of bodily autonomy, reproductive control, and the horror of being reduced to a vessel. This is Cycle One of the story.
+Vessel is a Ren'Py visual novel exploring themes of bodily autonomy, reproductive control, and the horror of being reduced to a vessel. Cycles One and Two are now playable.
 
 ## Content Warning
 This game contains mature themes including:
@@ -42,18 +42,29 @@ You can also navigate to the `vessel_game` folder and run it directly with Ren'P
 
 ## Game Features
 
-### Cycle One Story
+### Cycle One: Awakening
 Experience the protagonist's first pregnancy cycle as she gradually discovers the true nature of the facility she's trapped in. The narrative focuses on:
 - Daily life at the luxury wellness facility
 - Increasing physical dependence
 - Encounters with caretakers and other residents
 - The horrifying revelation at the end
 
+### Cycle Two: The Knowing
+Lily is pregnant again — and this time she's aware of what's happening. Cycle Two introduces:
+- **Elena** — a veteran on her fourth cycle who has been planning an escape for eight months
+- **Escape mechanics** — gather clues, study staff patterns, find weaknesses in the facility
+- **A midnight escape sequence** with real stakes and branching paths
+- **Three distinct endings**:
+  - **Escaped** — breach the wall and flee into the night
+  - **Recaptured** — caught and drugged back into compliance
+  - **Enduring** — stay behind, but carry the knowledge forward
+- New stats: Hope, Compliance, Escape Clues, Ally Trust
+
 ### Game Mechanics
 - **Status Screen**: Track the protagonist's physical deterioration and mental state
 - **Inventory System**: Experience the frustration of limited autonomy through restricted inventory
-- **Choice System**: Make dialogue choices that reveal character but may not change outcomes
-- **Stat Tracking**: Monitor Fatigue, Dignity, and Resistance levels
+- **Choice System**: Choices carry real weight — especially in Cycle Two where they determine your ending
+- **Stat Tracking**: Monitor Fatigue, Dignity, Resistance, Hope, and Compliance
 
 ### UI Elements
 - Press "Status" button to view physical condition
@@ -66,7 +77,8 @@ Experience the protagonist's first pregnancy cycle as she gradually discovers th
 ```
 vessel_game/
 ├── game/
-│   ├── script.rpy          # Main story script
+│   ├── script.rpy          # Cycle One story script
+│   ├── cycle_two.rpy       # Cycle Two story script
 │   ├── screens.rpy         # Custom UI screens
 │   ├── gui.rpy            # GUI configuration
 │   ├── options.rpy        # Game options
@@ -86,22 +98,23 @@ You can customize:
 
 ## Development Status
 
-**Current Version**: 0.1 - Cycle One Complete
+**Current Version**: 0.2 - Cycles One & Two
 
 **Completed**:
-- First cycle narrative arc
-- Core game mechanics
+- Cycle One narrative arc (linear with dialogue choices)
+- Cycle Two narrative arc (branching with three endings)
+- Core game mechanics and stat tracking
 - Status and inventory systems
-- Multiple scenes and decision points
-- First pregnancy revelation ending
+- New characters: Elena, Nurse Patton
+- Escape sequence with multiple paths
+- ~1,800 lines of script
 
 **Planned for Future Updates**:
-- Cycle Two and beyond
-- Additional character interactions
-- Expanded activity sequences
-- More branching dialogue
+- Cycle Three and beyond
+- Consequences that carry across cycles
 - Sound design and music
 - Character sprite artwork
+- Background art
 - Additional UI polish
 
 ## Credits
@@ -112,10 +125,10 @@ Built using Ren'Py Visual Novel Engine (https://www.renpy.org/)
 
 ## Feedback & Support
 
-This is an early version. Future cycles will expand on:
-- The protagonist's growing awareness and attempts at resistance
+Cycle Two introduces meaningful branching and consequences. Future cycles will expand on:
+- Outcomes of Lily's escape (or recapture)
 - Deeper character development for caretakers and residents
-- More complex choice consequences
+- Cross-cycle consequence tracking
 - Additional gameplay mechanics
 
 ## License
